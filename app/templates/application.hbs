@@ -1,5 +1,42 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="container-fluid">
+	<div class="row">
+		<div class="navbar navbar-fixed-top azul">
+		  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		      <div class="row">
+		          <div class="custom">
+		              <p>
+		                  <a href="http://www.ugto.mx">
+		                      <img style="display: block; margin-left: auto; margin-right: auto; width:250px" alt="Universidad de Guanajuato" src="https://intraug.ugto.mx/plantilla/Images/escudo-horizontal-png.png">
+		                  </a>
+		              </p>
+		          </div>
+		      </div>
+		  </div>
+		</div>
+	</div>
+</div>
+<br><br><br><br><br>
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky text-center">
+        <h3> Menu </h3>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active">
+              <span data-feather="home"></span>
+              Dashboard
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-{{outlet}}
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+
+        {{outlet}}
+
+    </main>
+
+  </div>
+</div>
