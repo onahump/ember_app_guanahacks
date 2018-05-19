@@ -51,7 +51,6 @@
     					<textarea rows="4" cols="50"></textarea>
     				  </div>
 
-
 					  {{/modal.body}}
 					  {{#modal.footer}}
 					    {{#bs-button onClick=(action modal.close)}}Cancel{{/bs-button}}
@@ -74,7 +73,7 @@
 			  <div class="col-sm-4">
 			    <div class="card">
 			      <div class="card-body text-center">
-			        {{#bs-button type="warning" }}{{fa-icon "exclamation-circle" size="5"}}<p>Quejas</p>{{/bs-button}}
+			        <button  type="button" class="btn btn-warning" {{action 'clickMeToComplain'}}> {{fa-icon "exclamation" size="5"}}<p>Quejas</p> </button>
 			      </div>
 			    </div>
 			  </div>	
