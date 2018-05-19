@@ -1,1 +1,69 @@
-{{outlet}}
+<div class="container">
+	<div class="row">
+		 <div class="col">
+	    	{{#bs-carousel as |car|}}
+			  {{#car.slide}}
+			    <img alt='First slide' src='http://www.contrapuntonews.com/wp-content/uploads/2017/06/Guanajuato_Universidad-de-Guanajuato.jpg'>
+			    <div class="carousel-caption">
+			      Bienvenidos
+			    </div>
+			  {{/car.slide}}
+			{{/bs-carousel}}
+		</div>
+  	</div> 
+  	<br>
+	<div class="row">
+		 <div class="col">
+			{{#bs-accordion as |acc|}}
+			  
+			  {{#acc.item value="1" as |aitem|}}
+			    {{#aitem.title}}
+			      <strong>Justificación</strong>
+			    {{/aitem.title}}
+			    {{#aitem.body}}
+			      <p>Siempre velando por la seguridad y la integridad. Tenemos el compromiso de garantizar bienestar y tranquilidad a nuestra comunidad universitaria. Se desarrolla este portal con base de experiencias, generando un registro de fácil interpretación con el fin de mantener informados de la seguridad por zonas, así como la calidad de vivienda en arrendamiento.</p>
+			    {{/aitem.body}}
+			  {{/acc.item}}
+			  
+			  
+			  {{#acc.item value="2" as |aitem|}}
+			    {{#aitem.title}}
+			      <strong>Objetivos Generales</strong>
+			    {{/aitem.title}}
+			    {{#aitem.body}}
+				La seguridad es un tema amplio, por ello lo dividimos en 4 objetivos específicos. 
+				<ul>
+					<li>Vivienda Segura:
+						<ul>
+							<li>Registra y evalúa el domicilio en donde habitas, creando así un vínculo entre Universidad y Arrendador</li>
+						</ul>
+					</li>
+				</ul>
+				<ul>
+					<li>Quejas:
+						<ul>
+							<li>Infórmanos de las condiciones de tu vivienda, en cuanto a plagas, construcción, calidad de los servicios que recibes, etc.</li>
+						</ul>
+					</li>
+				</ul>
+				<ul>
+					<li> Denuncia Universitaria: 
+						<ul>
+							<li>En busca de la agilización del proceso de atención de nuestras autoridades en hechos delictivos, facilitamos el registro y proceso de tu denuncia.</li>
+						</ul>
+					</li>
+				</ul>
+				<ul>
+					<li>Mapa de calor:
+						<ul>
+							<li>Con marcado de colores, se muestra las zonas con mayores indicios de inseguridad de la ciudad de Guanajuato, así como el registro de costos de arrendamiento.</li>
+						</ul>
+					</li>
+				</ul>
+			    {{/aitem.body}}
+			  {{/acc.item}}
+
+			{{/bs-accordion}}
+		</div>
+	</div>
+</div>

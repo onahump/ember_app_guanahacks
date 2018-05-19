@@ -1,1 +1,83 @@
-<h3>Seguridad universitaria</h3>
+<div class="container"> 
+	<div class="panel panel-default">
+  		<div class="panel-heading">Panel de Seguridad estudiantil</div>
+  		<div class="panel-body">
+  			<div class="row">
+			  <div class="col-sm-4">
+			    <div class="card">
+			      <div class="card-body text-center">
+					{{#bs-modal open=modal3  onHidden=(action (mut modal3) false) as |modal|}}
+					  {{#modal.header}}
+					    <h4 class="modal-title">
+					      Encuesta vivienda segura
+					    </h4>
+					  {{/modal.header}}
+					  {{#modal.body}}
+					  <div class="form-group">
+					    <label for="email">Email address:</label>
+    					<input type="email" class="form-control" id="email">
+    				  </div>
+  					  <div class="form-group">
+					    <label for="email">Email address:</label>
+    					<input type="email" class="form-control" id="email">
+    				  </div>
+  					  <div class="form-group">
+					    <label for="email">Email address:</label>
+    					<input type="email" class="form-control" id="email">
+    				  </div>
+  					  <div class="form-group">
+					    <label for="email">Email address:</label>
+    					<input type="email" class="form-control" id="email">
+    				  </div>
+  					  <div class="form-group">
+					    <label for="email">Email address:</label>
+    					<input type="email" class="form-control" id="email">
+    				  </div>
+  					  <div class="form-group">
+					    <label for="email">Email address:</label>
+    					<input type="email" class="form-control" id="email">
+    				  </div>
+  					  <div class="form-group">
+					    <label for="email">Email address:</label>
+    					<input type="email" class="form-control" id="email">
+    				  </div>
+  					  <div class="form-group">
+					    <label for="email">Email address:</label>
+    					<input type="email" class="form-control" id="email">
+    				  </div>
+  					  <div class="form-group">
+					    <label for="email">Email address:</label>
+    					<input type="email" class="form-control" id="email">
+    				  </div>
+
+
+					  {{/modal.body}}
+					  {{#modal.footer}}
+					    {{#bs-button onClick=(action modal.close)}}Cancel{{/bs-button}}
+					    {{#bs-button type="success" onClick=(action modal.submit)}}Save{{/bs-button}}
+					  {{/modal.footer}}
+					{{/bs-modal}}
+					{{#bs-button  type="success" onClick=(action (mut modal3) true)}}{{fa-icon "home" size="5"}}<p>Vivienda segura</p>{{/bs-button}}
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="col-sm-4">
+			    <div class="card">
+			      <div class="card-body text-center">
+			       {{#bs-button type="primary" }}{{fa-icon "map-marker" size="5"}}<p>Seguridad del Entorno</p>{{/bs-button}}
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="col-sm-4">
+			    <div class="card">
+			      <div class="card-body text-center">
+			        {{#bs-button type="warning" }}{{fa-icon "exclamation-circle" size="5"}}<p>Quejas</p>{{/bs-button}}
+			      </div>
+			    </div>
+			  </div>	
+			</div>
+  		</div>
+	</div>
+</div>
