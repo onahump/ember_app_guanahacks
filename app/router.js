@@ -9,6 +9,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('universitySecurity');
   this.route('complaint');
+  this.route('map');
 });
 
 export default Router;
