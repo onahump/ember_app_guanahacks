@@ -1,31 +1,33 @@
-<div class="container-fluid">
-	<div class="row">
-		<div class="navbar navbar-fixed-top azul">
-		  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		      <div class="row">
-		          <div class="custom">
-		              <p>
-		                  <a href="http://www.ugto.mx">
-		                      <img style="display: block; margin-left: auto; margin-right: auto; width:250px" alt="Universidad de Guanajuato" src="https://intraug.ugto.mx/plantilla/Images/escudo-horizontal-png.png">
-		                  </a>
-		              </p>
-		          </div>
-		      </div>
-		  </div>
-		</div>
-	</div>
-</div>
-<br><br><br><br><br>
+<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 barra_azul">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="row">
+              <div class="custom">
+                  <p>
+                      <a href="http://www.ugto.mx">
+                          <img style="display: block; margin-left: auto; margin-right: auto; width:250px" alt="Universidad de Guanajuato" src="https://intraug.ugto.mx/plantilla/Images/escudo-horizontal-png.png">
+                      </a>
+                  </p>
+              </div>
+          </div>
+      </div>
+</nav>
+
 <div class="container-fluid">
   <div class="row">
     <nav class="col-md-2 d-none d-md-block bg-light sidebar">
       <div class="sidebar-sticky text-center">
-        <h3> Menu </h3>
+        <h3> Seguridad Escolar UDG</h3>
         <ul class="nav flex-column">
           <li class="nav-item">
             <a class="nav-link active">
               <span data-feather="home"></span>
-              Dashboard
+                {{#link-to 'index' class="btn btn-primary"}} Home {{/link-to}}
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active">
+              <span data-feather="home"></span>
+                {{#link-to 'universitySecurity' class="btn btn-primary"}} Seguridad Universitaria {{/link-to}}
             </a>
           </li>
         </ul>
