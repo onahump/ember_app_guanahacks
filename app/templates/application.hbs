@@ -1,44 +1,19 @@
-<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 barra_azul">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="row">
-              <div class="custom">
-                  <p>
-                      <a href="http://www.ugto.mx">
-                          <img style="display: block; margin-left: auto; margin-right: auto; width:250px" alt="Universidad de Guanajuato" src="https://intraug.ugto.mx/plantilla/Images/escudo-horizontal-png.png">
-                      </a>
-                  </p>
-              </div>
-          </div>
-      </div>
+<nav class="navbar navbar-default">
+  <p>
+      <a>
+          <img style="display: block; margin-left: auto; margin-right: auto; width:250px" alt="Universidad de Guanajuato" src="https://intraug.ugto.mx/plantilla/Images/escudo-horizontal-png.png">
+      </a>
+  </p>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a>
+                  {{#link-to 'index'}} <img style="display: block; margin-left: auto; margin-right: auto; width:250px" alt="Universidad de Guanajuato" src="https://intraug.ugto.mx/plantilla/Images/logo%20UG_IntraUG.png">{{/link-to}}
+      </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#"> {{#link-to 'universitySecurity'}} Seguridad Estudiantil {{/link-to}}</a></li>
+    </ul>
+  </div>
 </nav>
 
-<div class="container-fluid">
-  <div class="row">
-    <nav class="col-md-2">
-      <div class="text-center">
-        <h3> Seguridad Escolar</h3>
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link active">
-              <span data-feather="home"></span>
-                {{#link-to 'index' class="btn btn-primary"}} Home {{/link-to}}
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active">
-              <span data-feather="home"></span>
-                {{#link-to 'universitySecurity' class="btn btn-primary"}} Seguridad Universitaria {{/link-to}}
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-
-        {{outlet}}
-
-    </main>
-
-  </div>
-</div>
+{{outlet}}
