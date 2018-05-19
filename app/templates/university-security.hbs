@@ -14,40 +14,41 @@
 					  {{/modal.header}}
 					  {{#modal.body}}
 					  <div class="form-group">
-					    <label for="email">Email address:</label>
-    					<input type="email" class="form-control" id="email">
+					    <label for="email">Dirección:</label>
+    					<input type="text" class="form-control" id="direccion">
+    				  </div>
+
+  					  <div class="form-group">
+					    <label for="email">Costo Mensual de la renta:</label>
+    					<input type="number" class="form-control" id="costo">
     				  </div>
   					  <div class="form-group">
-					    <label for="email">Email address:</label>
-    					<input type="email" class="form-control" id="email">
+					    <label for="email">¿Cómo te sientes en el entorno inmediato a tu vivienda?</label>
+							{{#bs-button-group
+							  value=buttonGroupValue2
+							  type="radio"
+							  onChange=(action (mut buttonGroupValue2)) as |bg|}}
+							  {{#bg.button value=1}}Nada Seguro{{/bg.button}}
+							  {{#bg.button value=2}}Poco Seguro{{/bg.button}}
+							  {{#bg.button value=3}}Seguro{{/bg.button}}
+							  {{#bg.button value=4}}Muy seguro{{/bg.button}}
+							{{/bs-button-group}}
+							<p>Seleccionaste: {{buttonGroupValue2}}</p>
     				  </div>
   					  <div class="form-group">
-					    <label for="email">Email address:</label>
-    					<input type="email" class="form-control" id="email">
+					    <label for="email">¿Has sufrido, presenciado o escuchado algún hecho delictivo de robo a mano armada o casa/habitación?</label>
+						{{#bs-button-group
+						  value=buttonGroupValue3
+						  type="radio"
+						  onChange=(action (mut buttonGroupValue3)) as |bg|}}
+						  {{#bg.button value=1}}Si{{/bg.button}}
+						  {{#bg.button value=2}}No{{/bg.button}}
+						{{/bs-button-group}}
+						<p>Seleccionaste: {{buttonGroupValue3}}</p>
     				  </div>
   					  <div class="form-group">
-					    <label for="email">Email address:</label>
-    					<input type="email" class="form-control" id="email">
-    				  </div>
-  					  <div class="form-group">
-					    <label for="email">Email address:</label>
-    					<input type="email" class="form-control" id="email">
-    				  </div>
-  					  <div class="form-group">
-					    <label for="email">Email address:</label>
-    					<input type="email" class="form-control" id="email">
-    				  </div>
-  					  <div class="form-group">
-					    <label for="email">Email address:</label>
-    					<input type="email" class="form-control" id="email">
-    				  </div>
-  					  <div class="form-group">
-					    <label for="email">Email address:</label>
-    					<input type="email" class="form-control" id="email">
-    				  </div>
-  					  <div class="form-group">
-					    <label for="email">Email address:</label>
-    					<input type="email" class="form-control" id="email">
+					    <label for="email">Detalla el entorno (presencia o no de personas sospechosas, grafitis, falta de iluminación pública, existencia de cámaras de seguridad, etc)</label>
+    					<textarea rows="4" cols="50"></textarea>
     				  </div>
 
 
