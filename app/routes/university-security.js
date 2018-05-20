@@ -8,6 +8,9 @@ export default Route.extend({
 	actions:{
 		clickMeToComplain:function(){
 			this.transitionTo("complaint")
+		},
+		clickMeToMap:function(){
+			this.transitionTo("complaint")
 		}
 	}
 });
