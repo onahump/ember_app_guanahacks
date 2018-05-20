@@ -15,11 +15,21 @@
 	  <div class="form-group">
 	    <label for="email">2. Detalla tu reporte</label>
 		<div>
-			<textarea rows="4" cols="50"></textarea>
+			<textarea rows="4" cols="140"></textarea>
 		</div>
 	  </div>
+	  <div class="form-group">
+	    <label for="email">3. Agrega evidencia</label>
+		<div>
+		  <button type="submit" class="btn btn-primary mb-2">{{fa-icon "file-image-o" size="3"}} <p> Subir una imagen</p></button>
+	 	  <button type="submit" class="btn btn-primary mb-2">{{fa-icon "file-video-o" size="3"}} <p> Subir un video</p></button>
+	 	  <button type="submit" class="btn btn-primary mb-2">{{fa-icon "file-sound-o" size="3"}} <p> Subir un audio</p></button>
+		</div>
+	  </div>
+
+
 	  <div class="checkbox">
-	    <label><input type="checkbox"> Remember me</label>
+	    <label><input type="checkbox" required>4. Solicitud de revision por parte de las autoridades</label>
 	  </div>
 	  <button type="submit" class="btn btn-primary">Enviar</button>
 
